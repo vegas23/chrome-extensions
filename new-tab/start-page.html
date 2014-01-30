@@ -2,17 +2,59 @@
 <head>
 <title>start</title>
 <link rel="shortcut icon" type="image/gif" href="<!--INSERT IMG URL HERE>-->" />
-<link href='http://fonts.googleapis.com/css?family=Electrolize|Roboto:100,300' rel='stylesheet' type='text/css'>
-<link href='dark.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  background : #ffffff;
+  background : radial-gradient(ellipse at center, #ffffff 0%, #eee 100%);
+  background : -moz-radial-gradient(#eee, #fff);
+}
+.keepcentered {
+  width : 640px;
+  height : 300px;
+  margin-left : auto;
+  margin-right : auto;
+  margin-top: 200px;
+  font-weight : 100;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style : normal;
+  color : #d64937; // Change this to change the color of the colored font on the page.
+  margin : 5px;
+}
+td, tr {
+  width: 20%;
+  text-align: center;
+}
+table input {
+  width: 100%;
+  border: 1px solid #d64937;
+  padding: 10px;
+}
+a {
+  font-weight: 100;
+  color : #999;
+}
+a:hover{
+  color: #eee;
+}
+a:link {
+  text-decoration : none;
+  text-shadow: 0px 0px 0px #000;
+}
+input#search {
+  width: 100%;
+  color:#d64937;
+  border: 1px solid #d64937;
+  padding: 10px;
+  font-size: 18px;
+}
+div#time { font-size: 72px; }
+</style>
 </head>
 
 <body>
-<div class="history">
-  <input id="historyText" placeholder="history..." type="text" />
-</div>
-<div class="notes">
-  <textarea id="noteText"></textarea>
-</div>
 <div class="keepcentered">
   <center><div id="time"></div></center>
   <p>
@@ -24,10 +66,9 @@
     <table width="100%" border="0px">
       <tr>
         <td><input id="subreddit" placeholder="subreddit" type="text" /></td>
-        <td><input id="issue" placeholder="issue #" type="text" /></td>
-        <td><input id="testp" placeholder="testp name" type="text" /></td>
-        <td><input id="djangome" placeholder="django me..." type="text" /></td>
+        <td><input id="youtube" placeholder="youtube" type="text" /></td>
         <td><input id="weather" placeholder="weather zip" type="text" /></td>
+        <td><input id="ups" placeholder="ups tracking" type="text"/></td>
       </tr>
     </table>
   </p>

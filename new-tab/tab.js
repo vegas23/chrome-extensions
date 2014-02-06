@@ -11,8 +11,13 @@ function updateClock() {
     if (retval == 0) retval = 12;
     return retval;
   }
+  Date.getSecondsTwoDigits = function () {
+    var retval = now.getSeconds();
+    if(retval < 10) return ("0" + retval.toString());
+    else return retval.toString();
+  }
   var now = new Date(),
-      time = Date.getHoursModTwelve() + ':' + Date.getMinutesTwoDigits();
+      time = Date.getHoursModTwelve() + ':' + Date.getMinutesTwoDigits() + ':' + Date.getSecondsTwoDigits();
   document.getElementById('time').innerHTML = ["", time].join('');
   setTimeout(updateClock, 1000);
 }

@@ -5,36 +5,46 @@
 <link href='http://fonts.googleapis.com/css?family=Archivo Narrow:400,100,300' rel='stylesheet' type='text/css'>
 <style type="text/css">
 body {
-  background : #ffffff;
-  background : radial-gradient(ellipse at center, #ffffff 0%, #eee 100%);
-  background : -moz-radial-gradient(#eee, #fff);
+  background : #222222;
 }
 .keepcentered {
   width : 680px;
   height : 300px;
   margin-left : auto;
   margin-right : auto;
-  margin-top: 150px;
+  margin-top: 200px;
   font-weight : 100;
 }
 body {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Electrolize', sans-serif;
   font-style : normal;
-  color : #3B5B7A; // Change this to change the color of the colored font on the page.
+  /*color: #d75f5f;*/
+  color : #06989A;
   margin : 5px;
+}
+input, textarea, select {
+  background-color: #222222;
+  border: 1px solid #06989A;
+  color : #06989A;
+  font-family: 'Electrolize', sans-serif;
+  padding: 10px;
 }
 td, tr {
   width: 20%;
   text-align: center;
 }
+th {
+  width: 20%;
+  font-weight: normal;
+  text-align: center;
+}
 table input {
   width: 100%;
-  border: 1px solid #3B5B7A;
-  padding: 10px;
 }
 a {
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  color : #999;
+  color : #ccc;
 }
 a:hover{
   color: #eee;
@@ -45,12 +55,26 @@ a:link {
 }
 input#search {
   width: 100%;
-  color:#3B5B7A;
-  border: 1px solid #3B5B7A;
-  padding: 10px;
   font-size: 18px;
 }
 div#time { font-size: 72px; }
+div.history {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 45%;
+}
+input#historyText {width: 100%;}
+div.notes { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 45%;
+}
+textarea#noteText {height: 125px; width: 100%;}
+
 </style>
 </head>
 
